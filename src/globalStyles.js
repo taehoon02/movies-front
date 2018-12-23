@@ -1,16 +1,18 @@
-import { injectGlobal } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 
-injectGlobal`
+createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
   ${reset};
+
   body {
-    font-family: 'Source Sans Pro', sans-serif;80%;
-    background-color: #ecf011;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #fff;
   }
 
   a {
-    color: inherit;
+    color: #000;
   }
 
   main {
